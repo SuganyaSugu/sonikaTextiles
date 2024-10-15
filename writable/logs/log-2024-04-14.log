@@ -1,0 +1,188 @@
+CRITICAL - 2024-04-14 03:24:39 --> ErrorException: Attempt to read property "is_admin" on array
+[Method: POST, Route: login]
+in APPPATH\Controllers\Home.php on line 56.
+ 1 APPPATH\Controllers\Home.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "is_admin" on array', 'D:\\xampp\\htdocs\\grocery_bo\\app\\Controllers\\Home.php', 56)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-14 03:37:31 --> ErrorException: Undefined variable $userdata
+[Method: GET, Route: /]
+in APPPATH\Views\common\header.php on line 126.
+ 1 APPPATH\Views\common\header.php(126): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userdata', 'D:\\xampp\\htdocs\\grocery_bo\\app\\Views\\common\\header.php', 126)
+ 2 APPPATH\Views\welcome_message.php(1): include('D:\\xampp\\htdocs\\grocery_bo\\app\\Views\\common\\header.php')
+ 3 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\grocery_bo\\app\\Views\\welcome_message.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('welcome_message', [], true)
+ 6 APPPATH\Controllers\Home.php(23): view('welcome_message', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-14 03:37:55 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: /]
+in APPPATH\Views\common\header.php on line 127.
+ 1 APPPATH\Views\common\header.php(127): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\xampp\\htdocs\\grocery_bo\\app\\Views\\common\\header.php', 127)
+ 2 APPPATH\Views\welcome_message.php(1): include('D:\\xampp\\htdocs\\grocery_bo\\app\\Views\\common\\header.php')
+ 3 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\grocery_bo\\app\\Views\\welcome_message.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('welcome_message', [], true)
+ 6 APPPATH\Controllers\Home.php(23): view('welcome_message', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-14 04:10:10 --> ErrorException: Undefined variable $lang
+[Method: GET, Route: createAdmin]
+in APPPATH\Views\common\header.php on line 48.
+ 1 APPPATH\Views\common\header.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $lang', 'D:\\xampp\\htdocs\\grocery_bo\\app\\Views\\common\\header.php', 48)
+ 2 APPPATH\Views\user\create_admin.php(1): include('D:\\xampp\\htdocs\\grocery_bo\\app\\Views\\common\\header.php')
+ 3 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\grocery_bo\\app\\Views\\user\\create_admin.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('user/create_admin', [], true)
+ 6 APPPATH\Controllers\User.php(27): view('user/create_admin', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->create_admin()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-14 07:29:16 --> ArgumentCountError: Too few arguments to function App\Controllers\Home::change_language(), 0 passed in D:\xampp\htdocs\grocery_bo\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: POST, Route: changeLanguage]
+in APPPATH\Controllers\Home.php on line 72.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->change_language()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-14 07:30:05 --> ErrorException: Undefined variable $lang
+[Method: POST, Route: changeLanguage]
+in APPPATH\Controllers\Home.php on line 75.
+ 1 APPPATH\Controllers\Home.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $lang', 'D:\\xampp\\htdocs\\grocery_bo\\app\\Controllers\\Home.php', 75)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->change_language()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-14 08:29:42 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "dasboard.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dasboard.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dasboard', [], true)
+ 3 APPPATH\Controllers\Home.php(23): view('dasboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-14 09:42:32 --> ParseError: syntax error, unexpected token "->", expecting "," or ";"
+[Method: POST, Route: saveAdmin]
+in APPPATH\Controllers\User.php on line 7.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\xampp\\htdocs\\grocery_bo\\app\\Controllers\\User.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\User')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\User')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\User', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-14 09:55:38 --> ErrorException: Undefined array key "username"
+[Method: POST, Route: saveAdmin]
+in APPPATH\Controllers\User.php on line 58.
+ 1 APPPATH\Controllers\User.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'D:\\xampp\\htdocs\\grocery_bo\\app\\Controllers\\User.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->create_admin()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-14 09:55:59 --> ErrorException: Undefined array key "contact"
+[Method: POST, Route: saveAdmin]
+in APPPATH\Controllers\User.php on line 61.
+ 1 APPPATH\Controllers\User.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "contact"', 'D:\\xampp\\htdocs\\grocery_bo\\app\\Controllers\\User.php', 61)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->create_admin()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-14 10:09:54 --> ErrorException: Array to string conversion
+[Method: GET, Route: createAdmin]
+in APPPATH\Views\user\create_admin.php on line 29.
+ 1 APPPATH\Views\user\create_admin.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\xampp\\htdocs\\grocery_bo\\app\\Views\\user\\create_admin.php', 29)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\grocery_bo\\app\\Views\\user\\create_admin.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('user/create_admin', [], true)
+ 5 APPPATH\Controllers\User.php(78): view('user/create_admin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->create_admin()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-14 10:36:43 --> ErrorException: Array to string conversion
+[Method: POST, Route: saveAdmin]
+in APPPATH\Views\user\create_admin.php on line 29.
+ 1 APPPATH\Views\user\create_admin.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\xampp\\htdocs\\grocery_bo\\app\\Views\\user\\create_admin.php', 29)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\grocery_bo\\app\\Views\\user\\create_admin.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('user/create_admin', [], true)
+ 5 APPPATH\Controllers\User.php(75): view('user/create_admin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->create_admin()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-14 10:40:01 --> ErrorException: Array to string conversion
+[Method: POST, Route: saveAdmin]
+in APPPATH\Views\user\create_admin.php on line 29.
+ 1 APPPATH\Views\user\create_admin.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\xampp\\htdocs\\grocery_bo\\app\\Views\\user\\create_admin.php', 29)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\grocery_bo\\app\\Views\\user\\create_admin.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('user/create_admin', [], true)
+ 5 APPPATH\Controllers\User.php(75): view('user/create_admin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->create_admin()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-14 10:40:07 --> ErrorException: Array to string conversion
+[Method: POST, Route: saveAdmin]
+in APPPATH\Views\user\create_admin.php on line 29.
+ 1 APPPATH\Views\user\create_admin.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\xampp\\htdocs\\grocery_bo\\app\\Views\\user\\create_admin.php', 29)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\grocery_bo\\app\\Views\\user\\create_admin.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('user/create_admin', [], true)
+ 5 APPPATH\Controllers\User.php(75): view('user/create_admin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->create_admin()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-14 15:59:46 --> ErrorException: Attempt to read property "fullname" on array
+[Method: GET, Route: manageCustomer]
+in APPPATH\Views\user\manage_customer.php on line 50.
+ 1 APPPATH\Views\user\manage_customer.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "fullname" on array', 'D:\\xampp\\htdocs\\grocery_bo\\app\\Views\\user\\manage_customer.php', 50)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\grocery_bo\\app\\Views\\user\\manage_customer.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('user/manage_customer', [], true)
+ 5 APPPATH\Controllers\User.php(85): view('user/manage_customer', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->get_customer()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

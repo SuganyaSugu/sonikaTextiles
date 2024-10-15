@@ -1,0 +1,70 @@
+ERROR - 2024-04-20 16:05:14 --> mysqli_sql_exception: Can't update table 'customer_list' in stored function/trigger because it is already used by statement which invoked this stored function/trigger in D:\xampp\htdocs\grocery_bo\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 D:\xampp\htdocs\grocery_bo\system\Database\MySQLi\Connection.php(308): mysqli->query('UPDATE `custome...', 0)
+#1 D:\xampp\htdocs\grocery_bo\system\Database\BaseConnection.php(721): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `custome...')
+#2 D:\xampp\htdocs\grocery_bo\system\Database\BaseConnection.php(635): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `custome...')
+#3 D:\xampp\htdocs\grocery_bo\system\Database\BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query('UPDATE `custome...', Array, false)
+#4 D:\xampp\htdocs\grocery_bo\system\Model.php(449): CodeIgniter\Database\BaseBuilder->update()
+#5 D:\xampp\htdocs\grocery_bo\system\BaseModel.php(1025): CodeIgniter\Model->doUpdate(Array, Array)
+#6 D:\xampp\htdocs\grocery_bo\system\Model.php(853): CodeIgniter\BaseModel->update(Array, Array)
+#7 D:\xampp\htdocs\grocery_bo\app\Controllers\User.php(92): CodeIgniter\Model->update('26', Array)
+#8 D:\xampp\htdocs\grocery_bo\system\CodeIgniter.php(933): App\Controllers\User->change_customer_status()
+#9 D:\xampp\htdocs\grocery_bo\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#10 D:\xampp\htdocs\grocery_bo\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\grocery_bo\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\grocery_bo\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\grocery_bo\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-04-20 16:05:14 --> CodeIgniter\Database\Exceptions\DatabaseException: Can't update table 'customer_list' in stored function/trigger because it is already used by statement which invoked this stored function/trigger
+[Method: POST, Route: changeCustomerStatus]
+in SYSTEMPATH\Database\BaseConnection.php on line 675.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query('UPDATE `customer_list` SET `status` = :status:
+WHERE `customer_list`.`customer_id` IN :customer_list.customer_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(449): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(1025): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(853): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\User.php(92): CodeIgniter\Model->update('26', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->change_customer_status()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-20 16:05:14 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Can't update table 'customer_list' in stored function/trigger because it is already used by statement which invoked this stored function/trigger
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(721): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `customer_list` SET `status` = \'2\'
+WHERE `customer_list`.`customer_id` IN (\'26\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(635): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `customer_list` SET `status` = \'2\'
+WHERE `customer_list`.`customer_id` IN (\'26\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query('UPDATE `customer_list` SET `status` = :status:
+WHERE `customer_list`.`customer_id` IN :customer_list.customer_id:', [...], false)
+ 4 SYSTEMPATH\Model.php(449): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(1025): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH\Model.php(853): CodeIgniter\BaseModel->update([...], [...])
+ 7 APPPATH\Controllers\User.php(92): CodeIgniter\Model->update('26', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->change_customer_status()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-20 16:05:14 --> [Caused by] mysqli_sql_exception: Can't update table 'customer_list' in stored function/trigger because it is already used by statement which invoked this stored function/trigger
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('UPDATE `customer_list` SET `status` = \'2\'
+WHERE `customer_list`.`customer_id` IN (\'26\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(721): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `customer_list` SET `status` = \'2\'
+WHERE `customer_list`.`customer_id` IN (\'26\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(635): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `customer_list` SET `status` = \'2\'
+WHERE `customer_list`.`customer_id` IN (\'26\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2497): CodeIgniter\Database\BaseConnection->query('UPDATE `customer_list` SET `status` = :status:
+WHERE `customer_list`.`customer_id` IN :customer_list.customer_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(449): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1025): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(853): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\User.php(92): CodeIgniter\Model->update('26', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->change_customer_status()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
