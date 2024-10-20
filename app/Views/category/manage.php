@@ -4,7 +4,7 @@
     <div class="page-breadcrumb">
         <div class="row">
             <div class="col-12 d-flex no-block align-items-center">
-                <h4 class="page-title"><?= lang("Category.manageTitle",[],$locale);?></h4>
+                <h4 class="page-title"><?= lang("common.manageCategory",[],$locale);?></h4>
                 <div class="ms-auto text-end">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
@@ -36,8 +36,8 @@
                     <table id="zero_config" class="table table-striped table-bordered">
                         <thead>
                             <tr>
-                                <th><?= lang('Category.name',[],$locale) ?></th>
-                                <th><?= lang('Category.status',[],$locale) ?></th>
+                                <th><?= lang('category.name',[],$locale) ?></th>
+                                <th><?= lang('category.status',[],$locale) ?></th>
                             </tr>
                         </thead>
                         <tbody>

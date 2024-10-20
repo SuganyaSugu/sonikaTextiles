@@ -4,7 +4,7 @@
     <div class="page-breadcrumb">
         <div class="row">
             <div class="col-12 d-flex no-block align-items-center">
-                <h4 class="page-title"><?= lang("User.title",[],$locale);?></h4>
+                <h4 class="page-title"><?= lang("common.createCategory",[],$locale);?></h4>
                 <div class="ms-auto text-end">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
@@ -38,7 +38,7 @@
                                 <label for="fname"
                                     class="col-sm-3 text-end control-label col-form-label"><?= lang('category.name',[],$locale)?><span class="text-danger">*</span></label>
                                 <div class="col-sm-9">
-                                    <?= form_input('name', '', 'id="name"  class="form-control form-control-lg" placeholder="'.lang('Category.name',[],$locale) .'" aria-label="name" aria-describedby="basic-addon1" required="required" autofocus="true"'); ?>
+                                    <?= form_input('name', '', 'id="name"  class="form-control form-control-lg" placeholder="'.lang('category.name',[],$locale) .'" aria-label="name" aria-describedby="basic-addon1" required="required" autofocus="true"'); ?>
                                 </div>
                             </div>
                         </div>
@@ -52,8 +52,8 @@
                                     class="col-sm-3 text-end control-label col-form-label"><?= lang('category.status',[],$locale)?><span class="text-danger">*</span></label>
                                 <div class="col-sm-9">
                                     <select name="status" id="status" class="form-control form-control-lg" aria-label="status" aria-describedby="basic-addon1" required autofocus>
-                                        <option value="1" <?= set_select('status', 'active'); ?>><?= lang('Category.active', [], $locale); ?></option>
-                                        <option value="2" <?= set_select('status', 'inactive'); ?>><?= lang('Category.inactive', [], $locale); ?></option>
+                                        <option value="1" <?= set_select('status', 'active'); ?>><?= lang('category.active', [], $locale); ?></option>
+                                        <option value="2" <?= set_select('status', 'inactive'); ?>><?= lang('category.inactive', [], $locale); ?></option>
                                     </select>
                                 </div>
                             </div>
@@ -75,8 +75,8 @@
     $(document).ready(function() {
         $('#createCategoryForm').validate({
             messages: {
-                name: "<?= lang('Category.nameError' , [], $locale)?>",
-                status: "<?= lang('Category.nameError' , [], $locale)?>",
+                name: "<?= lang('category.nameError' , [], $locale)?>",
+                status: "<?= lang('category.statusError' , [], $locale)?>",
             }
         });        
         var toastMixin = Swal.mixin({
