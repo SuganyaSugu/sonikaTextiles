@@ -225,7 +225,15 @@ helper('language');
                             <ul aria-expanded="false" class="collapse  first-level">
                                 <li class="sidebar-item <?php echo $set_active == 'createAdmin' ? 'active' : ''; ?>"><a href="<?= base_url('createAdmin'); ?>" class="sidebar-link"><i class="mdi mdi-account-plus"></i><span class="hide-menu"> <?= lang("common.createCustomer",[],$locale);?>
                                         </span></a></li>
-                                <li class="sidebar-item <?php echo $set_active == 'manageCustomer' ? 'active' : ''; ?>"><a href="<?= base_url('manageCustomer   '); ?>" class="sidebar-link"><i class="mdi mdi-account-multiple"></i><span class="hide-menu"> <?= lang("common.manageCustomer",[],$locale);?>
+                                <li class="sidebar-item <?php echo $set_active == 'manageCustomer' ? 'active' : ''; ?>"><a href="<?= base_url('manageCustomer'); ?>" class="sidebar-link"><i class="mdi mdi-account-multiple"></i><span class="hide-menu"> <?= lang("common.manageCustomer",[],$locale);?>
+                                        </span></a></li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-playlist-check"></i><span class="hide-menu"><?= lang("common.category",[],$locale);?> </span></a>
+                            <ul aria-expanded="false" class="collapse  first-level">
+                                <li class="sidebar-item <?php echo $set_active == 'createCategory' ? 'active' : ''; ?>"><a href="<?= base_url('createCategory'); ?>" class="sidebar-link"><i class="mdi mdi-playlist-plus"></i><span class="hide-menu"> <?= lang("common.createCategory",[],$locale);?>
+                                        </span></a></li>
+                                <li class="sidebar-item <?php echo $set_active == 'manageCategory' ? 'active' : ''; ?>"><a href="<?= base_url('manageCategory'); ?>" class="sidebar-link"><i class="mdi mdi-playlist-play"></i><span class="hide-menu"> <?= lang("common.manageCategory",[],$locale);?>
                                         </span></a></li>
                             </ul>
                         </li>

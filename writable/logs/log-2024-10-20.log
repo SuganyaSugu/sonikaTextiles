@@ -1,0 +1,76 @@
+CRITICAL - 2024-10-20 05:14:32 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "category/manage_category.php"
+[Method: GET, Route: manageCategory]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('category/manage_category.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('category/manage_category', [], true)
+ 3 APPPATH\Controllers\Category.php(69): view('category/manage_category', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Category->get_category()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-20 05:14:43 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "category/manage_category.php"
+[Method: GET, Route: manageCategory]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('category/manage_category.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('category/manage_category', [], true)
+ 3 APPPATH\Controllers\Category.php(69): view('category/manage_category', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Category->get_category()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-20 05:14:45 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "category/manage_category.php"
+[Method: GET, Route: manageCategory]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('category/manage_category.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('category/manage_category', [], true)
+ 3 APPPATH\Controllers\Category.php(69): view('category/manage_category', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Category->get_category()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-20 05:14:51 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "category/manage_category.php"
+[Method: GET, Route: manageCategory]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('category/manage_category.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('category/manage_category', [], true)
+ 3 APPPATH\Controllers\Category.php(69): view('category/manage_category', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Category->get_category()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-20 05:15:36 --> ErrorException: Undefined array key "customer_id"
+[Method: GET, Route: manageCategory]
+in APPPATH\Views\category\manage.php on line 57.
+ 1 APPPATH\Views\category\manage.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "customer_id"', 'D:\\xampp\\htdocs\\sonikaTextiles\\app\\Views\\category\\manage.php', 57)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\sonikaTextiles\\app\\Views\\category\\manage.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('category/manage', [], true)
+ 5 APPPATH\Controllers\Category.php(69): view('category/manage', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Category->get_category()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-20 05:15:38 --> ErrorException: Undefined array key "customer_id"
+[Method: GET, Route: manageCategory]
+in APPPATH\Views\category\manage.php on line 57.
+ 1 APPPATH\Views\category\manage.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "customer_id"', 'D:\\xampp\\htdocs\\sonikaTextiles\\app\\Views\\category\\manage.php', 57)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\xampp\\htdocs\\sonikaTextiles\\app\\Views\\category\\manage.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('category/manage', [], true)
+ 5 APPPATH\Controllers\Category.php(69): view('category/manage', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Category->get_category()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

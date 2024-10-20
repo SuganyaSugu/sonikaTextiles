@@ -13,3 +13,6 @@ $routes->get('createAdmin', 'User::create_admin');
 $routes->add('/saveAdmin', 'User::create_admin');
 $routes->get('manageCustomer', 'User::get_customer');
 $routes->add('changeCustomerStatus', 'User::change_customer_status',['get', 'post']);
+$routes->add('createCategory', 'Category::create_category');
+$routes->add('manageCategory', 'Category::get_category');
+$routes->add('saveCategory', 'Category::create_category');
